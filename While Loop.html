@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="showWordDiv"></div>
+
+<script>
+    let word = "tjoheisann"; // start-ord
+    let wordLooped = ""; // ord som blir printet ut
+
+    function setWord(newWord) {
+    word = newWord;
+}
+
+whileLoopString() 
+    function whileLoopString(){
+        let i = 0;
+        while (i < 5){ 
+            wordLooped += word[i]; // printer ut bokstaver fra "tjoheisann"
+            i++;
+        }
+
+        document.getElementById('showWordDiv').innerHTML = `
+            <div>Originalt ord: ${word}</div>
+            <div>Ord etter loop: ${wordLooped}</div>
+        `;
+    }
+        console.log(wordLooped);
+
+</script>
+
+</body>
+</html>
